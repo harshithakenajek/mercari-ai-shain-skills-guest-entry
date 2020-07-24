@@ -1,5 +1,30 @@
-# Format
-# [MESSAGE_LABEL]: [ACTUAL MESSAGE_IN_JAPANESE]
-
-# Example
-MESSAGE_HELLO_WORLD: "こんにちは世界"
+MESSAGE_GUEST_REGISTER_USER_NOT_FOUND: "ユーザー情報が取得できませんでした :cry:"
+MESSAGE_GUEST_REGISTER_DIALOG_TITLE: "ゲストの入館申請"
+MESSAGE_GUEST_REGISTER_DIALOG_SUBMIT: "申請"
+MESSAGE_GUEST_REGISTER_LABEL_COMPANY_NAME: "会社名"
+MESSAGE_GUEST_REGISTER_LABEL_VISITOR_NAME: "代表者名"
+MESSAGE_GUEST_REGISTER_LABEL_NUMBER_OF_VISITORS: "人数"
+MESSAGE_GUEST_REGISTER_LABEL_MEETING_TIME: "日時"
+MESSAGE_GUEST_REGISTER_HINT_MEETING_TIME: "YYYY-MM-DD HH:MMのフォーマットで指定してください"
+MESSAGE_GUEST_REGISTER_LABEL_MEETING_FLOOR: "フロア"
+MESSAGE_GUEST_REGISTER_LABEL_FLOOR_POSTFIX: "階"
+MESSAGE_GUEST_REGISTER_LABEL_CONTACT_NAME: "訪問先"
+MESSAGE_GUEST_REGISTER_LABEL_CONTACT_PHONE: "電話番号"
+MESSAGE_GUEST_ENTRY_LOGIN_ERROR: "eHillsのログインに失敗しました :bow:"
+MESSAGE_GUEST_REGISTER_ERROR: "入館申請に失敗しました :bow:\n
+`%{error}`"
+MESSAGE_GUEST_REGISTER_ERROR_MEETING_TIME: "入館申請に失敗しました :bow:\n
+訪問日時は `YYYY-MM-DD HH:MM` のフォーマットで指定してください。"
+MESSAGE_GUEST_ENTRY_RESERVATION_OK: "入館申請が完了しました :blush:\n
+下に登録情報と番号があなたにだけ見えるようになっていますので確認してください。"
+MESSAGE_GUEST_ENTRY_RESERVATION_RESULT: "この4桁の番号をゲストにシェアしてください。\n
+`%{pin}` \n
+```
+会社名：%{company_name}\n
+代表者名：%{visitor_name}\n
+人数：%{number_of_visitors}\n
+日時：%{meeting_time}\n
+フロア：%{meeting_floor}F\n
+訪問先：%{contact_name}\n
+電話番号: %{contact_phone}
+```"

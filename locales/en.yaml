@@ -1,5 +1,30 @@
-# Format
-# [MESSAGE_LABEL]: [ACTUAL MESSAGE_IN_ENGLISH]
-
-# Example
-MESSAGE_HELLO_WORLD: "Hello World"
+MESSAGE_GUEST_REGISTER_USER_NOT_FOUND: "Your user profile data could not be retrieved :cry:"
+MESSAGE_GUEST_REGISTER_DIALOG_TITLE: "Guest Entry"
+MESSAGE_GUEST_REGISTER_DIALOG_SUBMIT: "Register"
+MESSAGE_GUEST_REGISTER_LABEL_COMPANY_NAME: "Company Name"
+MESSAGE_GUEST_REGISTER_LABEL_VISITOR_NAME: "Representative Name"
+MESSAGE_GUEST_REGISTER_LABEL_NUMBER_OF_VISITORS: "Number of Visitors"
+MESSAGE_GUEST_REGISTER_LABEL_MEETING_TIME: "Meeting Time"
+MESSAGE_GUEST_REGISTER_HINT_MEETING_TIME: "Specify in 'YYYY-MM-DD HH:MM' format"
+MESSAGE_GUEST_REGISTER_LABEL_MEETING_FLOOR: "Meeting Floor"
+MESSAGE_GUEST_REGISTER_LABEL_FLOOR_POSTFIX: "F"
+MESSAGE_GUEST_REGISTER_LABEL_CONTACT_NAME: "Contact Name"
+MESSAGE_GUEST_REGISTER_LABEL_CONTACT_PHONE: "Contact Phone"
+MESSAGE_GUEST_ENTRY_LOGIN_ERROR: "Sorry, Guest entry login failed :bow:"
+MESSAGE_GUEST_REGISTER_ERROR: "Sorry, Guest entry registration failed :bow:\n
+`%{error}`"
+MESSAGE_GUEST_REGISTER_ERROR_MEETING_TIME: "Sorry, Guest entry registration failed :bow:\n
+Please specify a meeting time in `YYYY-MM-DD HH:MM` format."
+MESSAGE_GUEST_ENTRY_RESERVATION_OK: "Guest entry registration completed :blush:\n
+You can find the registration details below that's visible to only you."
+MESSAGE_GUEST_ENTRY_RESERVATION_RESULT: "Here is the Reservation PIN to share with your guest.\n
+`%{pin}` \n
+```
+Company Name：%{company_name}\n
+Visitor Name：%{visitor_name}\n
+Number of Visitors：%{number_of_visitors}\n
+Date Time：%{meeting_time}\n
+Floor: %{meeting_floor}F\n
+Contact Name: %{contact_name}\n
+Contact Number: %{contact_phone}
+```"

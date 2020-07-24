@@ -2,3 +2,6 @@
 # package>=version
 python-i18n[YAML]==0.3.7
 pyyaml==5.3.1
+beautifulsoup4==4.8.2
+mojimoji
+requests==2.24.0

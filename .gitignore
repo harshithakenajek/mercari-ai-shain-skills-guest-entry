@@ -8,3 +8,6 @@ venv
 
 # VS code
 .vscode
+
+# Environment variables
+.env.yaml
