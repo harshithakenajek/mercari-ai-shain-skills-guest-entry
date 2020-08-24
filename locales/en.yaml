@@ -11,8 +11,7 @@ MESSAGE_GUEST_REGISTER_LABEL_FLOOR_POSTFIX: "F"
 MESSAGE_GUEST_REGISTER_LABEL_CONTACT_NAME: "Contact Name"
 MESSAGE_GUEST_REGISTER_LABEL_CONTACT_PHONE: "Contact Phone"
 MESSAGE_GUEST_ENTRY_LOGIN_ERROR: "Sorry, Guest entry login failed :bow:"
-MESSAGE_GUEST_REGISTER_ERROR: "Sorry, Guest entry registration failed :bow:\n
-`%{error}`"
+MESSAGE_GUEST_REGISTER_ERROR: "Sorry, Guest entry registration failed... please contact <#%{channel}>."
 MESSAGE_GUEST_REGISTER_ERROR_MEETING_TIME: "Sorry, Guest entry registration failed :bow:\n
 Please specify a meeting time in `YYYY-MM-DD HH:MM` format."
 MESSAGE_GUEST_ENTRY_RESERVATION_OK: "Guest entry registration completed :blush:\n

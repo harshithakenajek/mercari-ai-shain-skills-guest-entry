@@ -74,7 +74,12 @@ Add `en.yaml` file which includes messages in English
 # Deployment
 ```
 $ gcloud config set project ${GCP_PROJECT_NAME}
-$ gcloud functions deploy --trigger-http --env-vars-file .env.yaml --runtime=python37 [FUNCTION_NAME]
+$ gcloud functions deploy --trigger-http --env-vars-file .env.yaml --runtime=python37 --entry-point main [FUNCTION_NAME]
+```
+
+# Allow unauthenticated access to allUsers
+```
+$ gcloud alpha functions add-iam-policy-binding [FUNCTION_NAME] --member=allUsers --role=roles/cloudfunctions.invoker
 ```
 
 # Share Endpoint URL
