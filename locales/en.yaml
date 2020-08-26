@@ -26,4 +26,5 @@ Date Time：%{meeting_time}\n
 Floor: %{meeting_floor}F\n
 Contact Name: %{contact_name}\n
 Contact Number: %{contact_phone}
-```"
+```\n
+<https://portal.mercari.in/home/locations-menu/tokyo-office-menu/pre-registration-jp|Here> you can find a mail template for your guest."

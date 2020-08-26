@@ -26,4 +26,5 @@ MESSAGE_GUEST_ENTRY_RESERVATION_RESULT: "この4桁の番号をゲストにシ�
 フロア：%{meeting_floor}F\n
 訪問先：%{contact_name}\n
 電話番号: %{contact_phone}
-```"
+```\n
+ゲストへのメールのテンプレートは<https://portal.mercari.in/home/locations-menu/tokyo-office-menu/pre-registration-jp|こちら>"
