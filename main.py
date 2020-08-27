@@ -20,21 +20,14 @@ i18n.set('skip_locale_root_data', True)
 
 # Entry point
 def main(request):
-  logging.info('Guest Entry Registeration...[Start]')
+  logging.info('========[START]========')
 
   if not request.method == 'POST':
     return 'Service is Up and Running....'
 
-  # Request
-  request_body = request.get_data()
-  request_json = request.get_json()
-  
-  # Load json payload from request body
-  if request_json is None:
-    logging.info('Loading json payload from request body')
-    data = request_body.decode('utf8')
-    params = json.loads(data)
-
+  # Request parameters
+  payload = request.get_data()
+  params = json.loads(payload)
   logging.info(params)
 
   # Queue
