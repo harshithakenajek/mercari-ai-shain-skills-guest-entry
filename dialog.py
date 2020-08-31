@@ -23,14 +23,14 @@ def guest_entry_dialog(params):
   set_locale(params['lang'])
 
   # Slack user not found
-  if params['user_real_name'] == '':
+  if params['user']['real_name'] == '':
     logging.info('Slack user not found....[ERROR]')
     # Return response
     return json.dumps({
       'slack': True,
       'type': 'message',
       'message': i18n.t('MESSAGE_GUEST_REGISTER_USER_NOT_FOUND'),
-      'channel': params['channel']
+      'channel': params['channel']['id']
     })
 
   # Set default time to 1 hour from now
@@ -75,12 +75,12 @@ def guest_entry_dialog(params):
                           'label': i18n.t('MESSAGE_GUEST_REGISTER_LABEL_CONTACT_NAME'),
                           'name': 'contact_name',
                           'placeholder': i18n.t('MESSAGE_GUEST_REGISTER_LABEL_CONTACT_NAME'),
-                          'value': params['user_real_name']},
+                          'value': params['user']['real_name']},
                         {'type': 'text',
                           'label': i18n.t('MESSAGE_GUEST_REGISTER_LABEL_CONTACT_PHONE'),
                           'name': 'contact_phone',
                           'placeholder': i18n.t('MESSAGE_GUEST_REGISTER_LABEL_CONTACT_PHONE'),
-                          'value': params['user_phone']}]}
+                          'value': params['user']['phone']}]}
 
   # Return response
   return json.dumps({
@@ -88,5 +88,5 @@ def guest_entry_dialog(params):
     'type': 'dialog',
     'dialog': DIALOG,
     'trigger_id': params['trigger_id'],
-    'channel': params['channel']
+    'channel': params['channel']['id']
   })

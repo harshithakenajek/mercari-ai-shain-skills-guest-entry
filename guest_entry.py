@@ -86,7 +86,7 @@ def register_guest_entry(request):
     )
     logging.info(res)
 
-    user_title = request['user_title'] if request['user_title'] != '' else USER_TITLE
+    user_title = request['user']['title'] if request['user']['title'] != '' else USER_TITLE
     
     try:
       guest_meeting_info = request['submission']['meeting_time'].split(' ')
